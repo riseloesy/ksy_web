@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Border</title>
+	<style>
+		p{
+			background:rgba(161, 218, 255, 0.4);
+			padding:20px;
+			/* height:50px; */
+		}
+		.p1{
+		border:5px dotted rgb(180, 180, 180)
+			/* border-style:dotted;
+			border-width:5px;
+			border-color:rgb(180, 180, 180); */
+		}
+		.p2{
+		border:5px solid rgb(180, 180, 180);
+		border-radius:5px;
+			/* border-style:solid;
+			border-width:5px;
+			border-color:rgb(180, 180, 180); */
+		}
+		.p3{
+		border:10px groove rgb(180, 180, 180);
+		border-radius:70px;
+			/* border-style:groove;
+			border-width:10px;
+			border-color:rgb(180, 180, 180); */
+		}
+		.p4{
+		border-style:solid dotted dashed;
+		border-color:powderblue yellow;
+		border-width:5px 3px 15px 18px;
+			/* border-top-style:solid;
+			border-right-style:dotted;
+			border-bottom-style:solid;
+			border-left-style:dotted; */
+			
+			/* border-left-width:3px;
+			/* border-bottom-color:yellow; */
+			/* border-right-width:3px; */ 
+		}
+		.p5{
+			/* bottom, 10px, 직선, 파랑색*/
+			border-bottom-style:solid;
+			border-bottom-width:10px;
+			border-bottom-color:powderblue;
+			
+		}
+	</style>
+</head>
+<body>
+	<h1>Border</h1>
+	<p class="p1">Border style 1</p>
+	<p class="p2">Border style 2</p>
+	<p class="p3">Border style 3</p>
+	<p class="p4">Border style 4</p>
+	<p class="p5">Border style 5</p>
+</body>
+</html>
