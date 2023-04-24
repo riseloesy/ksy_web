@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Forms</title>
+	<style>
+		ul{
+			/* border:1px solid red; */
+			list-style-type:none;
+			padding:0px; margin:0px;
+			width:500px;
+		}
+		label{ 
+			/* border:1px solid hotpink; */
+			display:inline-block;
+			width:100px;
+			padding:4px 0px;
+			font-size:12px;
+			background:hotpink;
+			color:navy;
+			border-radius:4px;
+			text-align: center;
+			margin-right:5px;
+		}
+		input{
+			border:1px solid lightgray;
+			width:50%;
+			padding: 3px 10px;
+			border-radious:4px;
+			vertical-align:top; 
+			text-indent:10px;
+			transotion:0.5s;
+			outline:none;
+		}
+		input[type=text]:focus{ border : 2px solid yellow;}
+		li{
+			margin:10px 0px;
+			text-align:center;
+		}
+		li:first-child, li:last-child {
+			/* border:1px solid blue; */
+			margin-top:20px;
+		}
+		li:last-child{padding-left:45px;}
+		button{
+			width:100px;
+			background:navy;
+			color:pink;
+			padding:5px;
+			border:1px solid navy;
+			font-size:12px;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Login Form</h1>
+	<form name="loginForm" action="#" method="get">
+		<ul>
+			<li>
+				<label>ID</label>
+				<input type="text" name="id">
+			</li>
+			<li>
+				<label>PASSWORD</label>
+				<input type="password" name="pass">
+			</li>
+			<li>
+				<button type="button">Login</button>
+				<button type="reset">Cancel</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>CSS-Navigation bar</title>
+	</head>
+	<style>
+		ul {
+		 	list-style-type:none;
+			background:#f1f1f1;
+			padding:0px;
+			margin:0px;
+			width:185px;
+		}
+		ul li > a {
+			display:block;
+			padding:10px 15px;
+			color:#000;
+			cursor:pointer;
+			text-decoration:none;
+			font-size:15px;
+		}
+		ul > li:first-child > a {
+			background:#4caF50;
+			color:white;
+		}
+		ul > li > a:hover:not(.active) {
+			background:#555;
+			color:white;
+		}
+		div.content{
+			background:gray;
+			height:400px;
+		}
+		
+	</style>
+<body>
+	<h1>Vertical</h1>
+		<ul> <!-- left menu -->
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	<div class="content"> <!-- content -->
+		<p>Vertical menu - Home</p>
+	</div>
+</body>
+</html>
