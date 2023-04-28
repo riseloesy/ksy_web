@@ -28,7 +28,7 @@
 <script>
 	function locationPage(page){
 		if(page == 'naver'){
-			window.open('about:blank').location.href='http://www.naver.com';
+			window.location.href='http://www.naver.com';
 		}else if(page == 'google'){		
 			window.open('about:blank').location.href='http://www.google.com';
 		}else if(page == 'daum'){
@@ -43,6 +43,8 @@
 			window.history.back();
 		}else if(page == 'next'){
 			window.history.forward();
+		}else if(page == 'go2'){
+			window.history.go(2);			
 		}
 	}
 </script>
@@ -54,5 +56,6 @@
 	<button type="button" onclick='locationPage("daum")'>다음</button>
 	<button type="button" onclick='historyPage("prev")'>prev</button>
 	<button type="button" onclick='historyPage("next")'>next</button>
+	<button type="button" onclick='historyPage("go2")'>Go page 2</button>
 </body>
 </html>
