@@ -30,7 +30,7 @@
 		$("body").append(code);
 		
 		});
-	});
+	
 </script>
 <Style>
 	table, th, td {border:1px solid blue;}
