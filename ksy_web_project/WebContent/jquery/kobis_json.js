@@ -32,8 +32,35 @@ $(document).ready(function(){
 		{"rnum":"10","rank":"10","rankInten":"-1",
 				"rankOldAndNew":"OLD","movieCd":"20231164","movieNm":"무명","openDt":"2023-04-26","salesAmt":"11138275","salesShare":"0.9",
 				"salesInten":"-1264480","salesChange":"-10.2","salesAcc":"166066039","audiCnt":"1392","audiInten":"93","audiChange":"7.2",
-				"audiAcc":"18667","scrnCnt":"161","showCnt":"207"}]}}
+				"audiAcc":"18667","scrnCnt":"161","showCnt":"207"}]}};
 	
 	
-		
+	
+	
+	let boxOffice = kobis.boxOfficeResult;
+	let output = "<h1>" + boxOffice.boxofficeType + "</h1>";
+	output += "<h3>기간 : " + boxOffice.showRange + "</h3>";
+	output += "<table border=1>";
+	output += "<tr>";
+	output += "<th>순위</th>";
+	output += "<th>영화제목</th>";
+	output += "<th>개봉일</th>";
+	output += "<th>누적관객수</th>";
+	output += "<th>상영횟수</th>";
+	output += "</tr>";
+	for(list of boxOffice.dailyBoxOfficeList){
+		output += "<tr>";
+		output += "<td>"+ list.rank +"</td>";
+		output += "<td>"+ list.movieNm +"</td>";
+		output += "<td>"+ list.openDt +"</td>";
+		output += "<td>"+ list.audiAcc +"</td>";
+		output += "<td>"+ list.showCnt +"</td>";
+		output += "</tr>";
+	}
+	output += "</table>";
+	
+	//alert(output);
+	
+	$("body").append(output);
+	
 });
