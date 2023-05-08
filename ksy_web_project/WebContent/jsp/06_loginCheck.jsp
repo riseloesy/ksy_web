@@ -13,9 +13,11 @@
 	if(did.equals(id) && dpass.equals(pass)){
 		//loginResult = "성공";
 		//06_loginSuccess.jsp 이동
+		response.sendRedirect("06_loginSuccess.jsp");
 	}else{
 		//loginResult = "실패";
 		//06_loginFail.jsp 이동
+		response.sendRedirect("06_loginFail.jsp");
 	}
 %>
     
